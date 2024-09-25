@@ -1,0 +1,48 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic button styles */
+a.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+a.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+a.btn:active {
+    transform: scale(0.95);
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between buttons */
+    margin: 20px 0; /* Space around button container */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    a.btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+    
+    .button-container {
+        gap: 10px; /* Reduce space between buttons on small screens */
+    }
+}
